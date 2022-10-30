@@ -13,12 +13,11 @@ int main()
 		return 1;
 	}
 	
-	
-	
 	std::string input_string_raw;
 	getline(input_file, input_string_raw);
 	std::replace(input_string_raw.begin(), input_string_raw.end(), ',', ' ');
 	std::stringstream input_string(input_string_raw);
+	
 	int location {};
 	std::vector<int> crab_locations {};
 	while (input_string >> location)
