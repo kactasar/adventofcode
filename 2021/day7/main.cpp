@@ -7,7 +7,7 @@
 
 int main()
 {
-    std::fstream input_file("input");
+	std::fstream input_file("input");
 	if(!input_file){
 		std::cout << "Error: input file not found.\n";
 		return 1;
